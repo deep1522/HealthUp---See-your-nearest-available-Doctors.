@@ -1,0 +1,33 @@
+doctype html 
+html
+    head
+        title Book
+        style
+            include ../static/style2.css
+
+    body
+        nav#navbar
+            .logo
+            a(href="/")
+                img(src="../static/healthup_logo.png", alt="healthup.com")
+            
+            ul
+                li.item #[a(href="/") Get the App]
+                li.item #[a(href="/") Diet]
+                li.active #[a(href="/") Book]
+                li.item #[a(href="/") Contact us]
+        section#home
+            h1.h-primary Find Doctors office around you
+            input(type="search" name="Search" placeholder="Search")
+            h2.h-prime Popular cities
+            .cities-container
+                #box
+                    h2.h-secondary Bangalore
+                #box
+                    h2.h-secondary Pune
+            .cities
+                #box
+                    h2.h-secondary Mumbai
+                #box
+                    h2.h-secondary Delhi
+

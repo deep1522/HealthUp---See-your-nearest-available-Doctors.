@@ -1,0 +1,132 @@
+*{
+        padding: 0px;
+        margin: 0px;
+    }
+    #navbar{
+        background-color:rgb(194 194 209) ;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        position:relative;
+    }
+    #navbar ul{
+        display: flex;
+    }
+    #navbar ul .item a:hover{
+    color: black;
+    background-color: bisque;
+    
+}
+    #navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    }
+    #navbar ul li{
+    
+    list-style-type: none;
+    font-size: 1.3rem;
+    text-align: right;
+
+}
+#navbar ul li a{
+    color: rgb(228, 86, 86);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: right;
+    
+}
+#navbar ul .active a{
+    background-color: rgb(44, 8, 8);
+    color: white;
+    cursor: pointer;
+}
+#home{
+    padding: 300px;
+    align-items: center;
+}
+.h-primary{
+    text-align: center;
+    font-size: 50px;
+}
+
+#home input[type=search]{
+    padding: 6px;
+    border-radius: 2px;
+    margin-left: 400px;
+    margin-top: 50px;
+    height: 40px;
+    width: 450px;
+    
+}
+#home::before{
+    content: "";
+    background:url(../static/appoint_bg2.jpg) no-repeat center center/cover ;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.90;
+
+}
+#home .h-prime{
+    color: rgb(1, 12, 12);
+    margin-left: 550px;
+    margin-top: 20px;
+}
+#home .cities #box .h-secondary{
+    margin-left: 40px;
+}
+
+#home .cities-container .h-secondary{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 2px;
+}
+#home .cities-container #box{
+    border: 2px solid rgb(69, 148, 238);
+    padding: 5px;
+    margin: 10px 6px;
+    width: 150px;
+    height: 30px;
+    margin-left: 340px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+#home .cities #box{
+    border: 2px solid rgb(69, 148, 238);
+    padding: 5px;
+    
+    width: 150px;
+    height: 30px;
+    margin-left: 840px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: #f2f2f2;
+    cursor: pointer;
+
+
+}
+#navbar .logo{
+    
+    justify-content: left;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+    margin-left: 1000px;
+}
+#home .btn a{
+    text-decoration: none;
+    list-style-type:none;
+    list-style: none;
+}

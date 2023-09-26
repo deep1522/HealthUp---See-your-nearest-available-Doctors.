@@ -1,0 +1,81 @@
+doctype html
+html
+    head
+        title healthup | Healthup.in
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            #logo
+                img(src='../static/healthup_logo.png', alt='Healthup.com')
+            ul
+                li.active  #[a(href="/") home]
+                li.item  #[a(href="/") About]
+                li.item  #[a(href="/appointment") Book]
+                li.item  #[a(href="/") contact US]
+        section#home
+            h1.h-primary Upgrade your health with healthup
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi accusantium sint enim.
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, harum!
+            
+            button.btn #[a(href="/login") Sign Up]
+        section.service-container
+            h1.h-primary Our Services
+            #services
+                div.box
+                    p
+                        a(href="/appointment")
+                            img(src="../static/appointment.avif", alt="Image Description")
+                    h2.h-secondary Book Appointments
+                    p.center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos itaque error sint.
+                div.box
+                    p
+                        a(href="/rehab")
+                            img(src="../static/rehab.avif", alt="")
+                    h2.h-secondary Rehabilitation
+                    p.center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos itaque error sint.
+                div.box
+                    p #a[(href="exercise.html")]
+                        img(src="../static/exercise.avif", alt="")
+                    h2.h-secondary Exercise
+                    p.center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos itaque error sint.
+        section#client-section
+            h1.h-primary Our Sponsors
+            #clients
+                .class-item
+                    img(src="../static/logo1.jpg", alt="")
+                .class-item
+                    img(src="../static/logo2.jpg", alt="")
+                .class-item
+                    img(src="../static/logo3.jpg", alt="")
+                .class-item
+                    img(src="../static/logo2.jpg", alt="")
+        section.contact
+            h1.h-primary Contact us
+            .contact-box
+                form(action="/contact" method="post")
+                    .form-group
+                        label(for="Name") Name:
+                        input(type="text" name="Name" id="Name" placeholder="Enter your name")
+                    .form-group
+                        label(for="Email") Email:
+                        input(type="text" name="Email" id="Email" placeholder="Enter your email")
+                    .form-group
+                        label(for="Phone") Phone:
+                        input(type="text" name="Phone" id="Phone" placeholder="Enter your phone")
+                    .form-group
+                        label(for="Message") Message:
+                        input(type="text" name="Message" id="Message" placeholder="Message")
+                    .form-group1
+                        input(type="Submit")
+                    .form-group1
+                        input(type="reset")
+        footer
+            .center
+            copyright &copy: www.healthup.com | All rights reserved
+
+
+            
+
+
+        

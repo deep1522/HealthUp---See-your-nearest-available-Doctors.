@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    background-color: white;
+    color:rgb(81, 226, 81);
+    padding: 13px 14px;
+    justify-content: right;
+    text-align: right;
+    position: relative;
+    display: flex;
+
+}
+#navbar #logo img{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    position: relative;
+    padding-right: 1175px;
+}
+#header .h1{
+    /* text-align: right; */
+    /* justify-content: left; */
+    /* padding-right: 1000px; */
+    position: relative;
+    color: green;
+    font-size: 1.2rem;
+    padding: 8px;
+    /* font-weight: bold; */
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul li{
+    list-style: none;
+    /* text-align: right; */
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: green;
+    font-size: 1.2rem;
+    /* text-align: right; */
+    border-radius: 20px;
+    /* justify-content: right; */
+}
+#navbar ul .items a:hover{
+    background-color: green;
+    color: white;
+}
+#navbar ul .active a{
+    background-color: green;
+    color: white;
+}
+#home{
+    background:center/cover no-repeat url(../static/rehab_bg.jpeg) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 900px;
+
+
+}
+
